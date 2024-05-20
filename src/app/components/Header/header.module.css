@@ -1,66 +1,102 @@
-.row{
-    /* padding: 25px; */
+.container {
+  position: fixed;
+  background-color: transparent;
+  z-index: 99;
 }
 
-.container{
-    position: fixed;
-    left: 100px;
-    width: 100vw;
-    background-color: transparent;
-    z-index: 99;
+.GetAQuote {
+  display: flex;
+  justify-content: flex-end;
 }
-.GetAQuote{
+
+.quotebtn {
+  border-radius: 25px;
+  font-size: 1.075rem;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  font-weight: 400;
+  background-color: #ce5137;
+  color: white;
+  border: none !important;
+  animation: slide-bottom 1s linear 0s 1 normal both;
+}
+
+.Link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.Responsive {
+  display: none;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logobtn {
+  padding: 25px;
+}
+
+.logoImg {
+  width: 100px;
+  height: 100px;
+  animation: slide-bottom 1s linear 0s 1 normal both;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 992px) {
+  .logo {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 80vh !important;
+  }
+  .Responsive {
     display: flex;
-    justify-content: end;
-}
-
-
-.quotebtn{
+    justify-content: center;
+  }
+  .quotebtn {
+    display: none;
+  }
+  .quotebtn2 {
     border-radius: 25px;
     font-size: 1.075rem;
     line-height: 1;
     padding: 1rem 1.5rem;
-    line-height: 1;
     display: inline-block;
     font-weight: 400;
     background-color: #ce5137;
     color: white;
-    /* font-family: "Playfair Display", serif; */
     border: none !important;
     animation: slide-bottom 1s linear 0s 1 normal both;
-    
-}
-@keyframes slide-bottom {
-			
-    0% {
-        transform:translateY(0);
-    }
-    100% {
-        transform:translateY(50px);
-    }
+  }
+  .Link {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+@media screen and (max-width: 786px) {
+  .logo {
+    align-items: flex-start;
+    height: auto;
+  }
+  .quotebtn2 {
+    display: block;
+  }
 }
-
-.logoImg{
-    width: 100px;
-    height: 100px;
-    animation: slide-bottom 1s linear 0s 1 normal both;
-
-}
-
-@keyframes slide-bottom {
-			
-    0% {
-        transform:translateY(0);
-    }
-    100% {
-        transform:translateY(50px);
-    }
-}
-

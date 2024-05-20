@@ -1,9 +1,205 @@
-.container{
+.container {
+    margin-top: 200px;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 40px;
+}
+
+.textWork {
+    text-align: center;
+    font-size: 28px;
+    color: gray;
+    letter-spacing: 1px;
+    
+}
+
+.textHeading {
+    font-weight: 700 !important;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.h1Work {
+    color: gray;
+}
+
+.WorkButton {
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 25%;
+    text-align: center;
+    color: gray;
+    margin: 0px 5px;
+    border: 1px solid gray;
+}
+
+.WorkRow {
+    cursor: pointer;
+    padding: 30px;
+}
+
+.MinumAnimated {
+    color: gray;
+    font-weight: bolder;
+
+}
+
+.Minum {
+    color: #ce5137;
+    font-weight: bolder;
+
+}
+
+.WorkRow2 {
+    display: none !important;
+}
+
+.AnimatedButton {
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-align: center;
+    color: gray;
+    margin: 0px 5px;
+    border: 1px solid gray;
+    letter-spacing: 2px;
+    font-size: 20px;
+    animation: shutter-in-top 1s ease-out 0.3s 1 normal both;
+}
+
+.AnimatedText {
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 20px;
+    animation: shutter-in-top 1s ease-out 0.3s 1 normal both;
+}
+
+@keyframes shutter-in-top {
+    0% {
+        transform: rotateX(-100deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.Image {
+    animation: scale-up-ver-center 1s linear 0s 1 normal both;
+}
+
+.Image2 {
+    width: 100%;
+    height: 50vh;
+}
+
+@keyframes scale-up-ver-center {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Text {
+    letter-spacing: 3px;
+    color: lightslategray;
+}
+
+.NonMinum {
+    animation: fade-out 1s linear 0s 1 normal both;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .WorkButton {
+        width: 35%;
+    }
+    .textWork {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .WorkRow {
+        display: none !important;
+    }
+    .WorkRow2 {
+        display: block !important;
+        margin-top: 10px;
+    }
+    .textWork {
+        font-size: 22px;
+    }
+    .AnimatedButton {
+        width: 80%;
+        font-size: 18px;
+    }
+    .Image2 {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .WorkButton {
+        width: 50%;
+        padding: 8px 12px;
+    }
+    .textWork {
+        font-size: 20px;
+    }
+    .AnimatedButton {
+        font-size: 16px;
+    }
+    .Image2 {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .WorkButton {
+        width: 70%;
+        padding: 6px 10px;
+    }
+    .textWork {
+        font-size: 18px;
+    }
+    .AnimatedButton {
+        font-size: 14px;
+    }
+    .Image2 {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .textWork {
+        font-size: 16px;
+    }
+    .WorkButton {
+        width: 90%;
+        padding: 5px 8px;
+    }
+    .AnimatedButton {
+        font-size: 12px;
+    }
+    .Image2 {
+        height: 25vh;
+    }
 }

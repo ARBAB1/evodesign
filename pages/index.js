@@ -1,6 +1,7 @@
-import Home2 from '../src/app/Pages/Home'
+import Home2 from './Home'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ParallaxProvider } from 'react-scroll-parallax';
   
 
 
@@ -8,9 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Home() {
   return (
     <div style={{background:'white'}}>
-       <Home2 />
-       
-
+        <Home2 />
     </div>
   );
 }

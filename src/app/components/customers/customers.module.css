@@ -1,0 +1,160 @@
+.Container {
+    padding: 50px 40px;
+  }
+  
+  .title {
+    background-color: #ce5137;
+    width: 100vw;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .titleRes {
+    display: none;
+  }
+  
+  .line {
+    border-left: 1px solid white;
+    opacity: 0.2;
+  }
+  
+  .profileCustomer {
+    padding: 10px 50px;
+  }
+  
+  .Images {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  
+  .Image1, .Image2, .Image3, .Image4 {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 0;
+  }
+  
+  .Image2 {
+    right: 50px;
+  }
+  
+  .Image3 {
+    right: 90px;
+  }
+  
+  .Image4 {
+    right: 135px;
+  }
+  
+  .para {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .text {
+    color: white;
+  }
+  
+  .text h1 {
+    line-height: 70px;
+    letter-spacing: 4px;
+  }
+  
+  .text button {
+    color: #ce5137;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .text button:hover {
+    color: white;
+    background-color: gray;
+  }
+  
+  .ImagesRespo,
+  .ImageRes1,
+  .ImageRes2,
+  .ImageRes3,
+  .ImageRes4,
+  .textRes,
+  .contentRes,
+  .rowRes {
+    display: none;
+  }
+  
+  /* Responsiveness */
+  
+  @media screen and (max-width: 992px) {
+    .text h1 {
+      text-align: center;
+      font-size: 40px;
+      line-height: normal;
+      letter-spacing: 2px;
+    }
+  
+    .title {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .Images {
+      justify-content: center;
+    }
+  
+    .Image1, .Image2, .Image3, .Image4 {
+      right: 0 !important;
+    }
+  
+    .para {
+      font-size: 22px;
+    }
+  
+    .ImagesRespo,
+    .ImagesRes {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .title {
+      padding: 20px;
+    }
+  
+    .text h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+      line-height: normal;
+    }
+  
+    .Images {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .Image1, .Image2, .Image3, .Image4 {
+      margin: 5px;
+      right: 0 !important;
+    }
+  
+    .para {
+      font-size: 18px;
+    }
+  
+    .text button {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+  

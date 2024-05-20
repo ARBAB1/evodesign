@@ -1,0 +1,138 @@
+.container{
+    margin-top: 200px;
+}
+
+/* General styles for heading */
+.heading h2{
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+}
+
+/* Styles for company images */
+.companyImage{
+    width: 230px;
+    height: 121px;
+    margin: 1px;
+}
+
+/* Container for companies with flexbox layout */
+.companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Slider heading styles */
+.HeadingSlider{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Client section styles with space between items */
+.Clients{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+/* Paragraph styles for slide text */
+.SlidePara{
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Padding for the 'Lets' section */
+.Lets{
+    padding: 25px;
+}
+
+/* Heading styles within the 'Lets' section */
+.Lets h1{
+    font-weight: bold;
+    font-size: 72px;
+    letter-spacing: 2px;
+}
+
+/* Media Queries for responsiveness */
+
+/* Styles for tablets and small desktops */
+@media (max-width: 1024px) {
+    .container {
+        margin-top: 150px;
+    }
+    .companyImage {
+        width: 150px;
+        height: 75px;
+    }
+    .HeadingSlider {
+        font-size: 20px;
+    }
+    .Clients {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .SlidePara {
+        font-size: 18px;
+    }
+    .Lets h1 {
+        font-size: 56px;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+    .companyImage {
+        width: 120px;
+        height: 60px;
+    }
+    .HeadingSlider {
+        font-size: 18px;
+        text-align: center;
+    }
+    .Clients {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .SlidePara {
+        font-size: 16px;
+    }
+    .Lets {
+        padding: 15px;
+    }
+    .Lets h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+}
+
+/* Styles for very small mobile devices */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 80px;
+    }
+    .companyImage {
+        width: 100px;
+        height: 50px;
+    }
+    .HeadingSlider {
+        font-size: 16px;
+    }
+    .Clients {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .SlidePara {
+        font-size: 14px;
+    }
+    .Lets {
+        padding: 10px;
+    }
+    .Lets h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,137 @@
+.container {
+  padding: 25px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Heading {
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.para {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+
+
+.progressContainer {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #f0f0f0;
+  z-index: 10;
+}
+
+.progressBar {
+  width: 100%;
+  background-color: #ce5137;
+  transition: height 0.1s ease-out;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.timeline2 {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.timelineItem {
+  padding: 30px 0;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.timelineItem2 {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.timelineItem2 p{
+  font-weight: 600 !important;
+  margin: 0;
+  color: #777;
+  font-size: 20px;
+}
+
+.timelineItem h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #777;
+  font-weight: bolder;  
+}
+
+.timelineItem p {
+  
+ 
+  margin: 0;
+  color: #777;
+}
+
+.ProgressRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barLine {
+  width: 100%;
+  max-width: 4px;
+  background-color: #ce5137;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .ProgressRow {
+      flex-direction: row;
+  }
+
+  .col-5 {
+      width: 40%;
+  }
+
+  .col-2 {
+      width: 20%;
+  }
+
+  .barLine {
+      width: 5%;
+      position: static;
+      transform: none;
+  }
+}
+
+
+
+/* function */
+
+
+.color{
+  color: #ce5137 !important;
+}

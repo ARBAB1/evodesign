@@ -1,48 +1,53 @@
 .container{
-    /* border: 1px solid black; */
-    /* height: 100vh; */
-    /* width: 100vw; */
-    position: relative;
-    top: 0px;
     background-color: #f5fafe;
-    /* padding: 50px; */
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
-.bannerText{
+/* .bannerText{
     z-index: 99;
     position: absolute;
-}
+} */
 
+.Heading{
+    padding: 25px;
+    
+
+}
 .bannerText span{
     color: white;
-
 }
 
-
-.Video{
-   
-        position: absolute;
-        z-index: -1;
-        height: 60vh;
-        width: 100vw;
-        object-fit: cover;
-        opacity: 0.2;
-    
-}
-.row{
+.VideoContainer{
     position: absolute;
-    top: 350px;
-    left: 150px;
+    z-index: 9;
+    object-fit: cover;
+    padding: 0;
+    top: 0;
+
 }
+.Video{
+  height: 100vh;
+  width: 100vw;       
+}
+
 .Col{
+    padding: 0px 100px !important;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    z-index: 98;
+    margin-top: 100px !important;
 }
 
 .BannerHeading{
    font-weight: 400;
    font-size:72px ;
-
+   display: flex;
+   flex-direction: column;
+   /* line-height: 5px; */
    color: #5f6269;
    opacity: 1;
    transform-style: preserve-3d;
@@ -61,11 +66,12 @@
 
 .BannerText{
     margin-top:35px;
-    font-size: 28px;
+    font-size: 36px;
     color: #838383;
+    font-weight: "100";
     /* font-family: "Playfair Display", serif; */
     animation: slide-top 1.2s linear 0.4s 1 normal both;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 .Rowtext{
     display: flex;
@@ -80,13 +86,24 @@
 }
 
 .colText span{
+    font-weight: 100;
     font-size: 48px;
     letter-spacing: 1px;
-    font-weight: 400;
+    
+    text-align: center;
+    /* font-weight: 400; */
     color: #838383;
     /* font-family: "Playfair Display", serif; */
     padding: 100px;
     animation: scale-in-center 1s linear 0.1s 1 normal none;
+}
+.colText span span{
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #4d4c4c;
 }
 @keyframes scale-in-center {
 			
@@ -122,6 +139,11 @@
 
 }
 
+.icons span:hover{
+    color: #ce5137;
+}
+
+
 @keyframes slide-top {
 			
     0% {
@@ -131,3 +153,93 @@
         transform:translateY(-100px);
     }
 }
+
+
+@media screen and (max-width:992px){
+    .row{
+        top: 217px;
+        left: 25px;
+    }
+    .BannerHeading{
+        font-size: 60px;
+    }
+    .BannerHeading2{
+        font-size: 60px;
+    }
+    .BannerText{
+    font-size: 32px;
+
+    }
+    .colText span{
+        font-size: 28px;
+        padding: 50px;
+      }
+      .colText span span{
+        font-size: 28px;
+        padding: 50px;
+        margin: 0;
+        padding: 0;
+
+      }
+}
+
+@media screen and (max-width:600px){
+  .Video{
+    object-fit: contain;
+  }
+  
+}
+
+@media screen and (max-width:768px){
+    
+    .BannerHeading{
+        font-size: 40px;
+    }
+    .BannerHeading2{
+        font-size: 40px;
+    }
+    .BannerText{
+        font-size: 24px;
+        margin-top: 0px;
+        /* line-height: 0px; */
+
+    }
+    .colText span{
+        font-size: 22px;
+        padding: 50px;
+      }
+      .colText span span{
+        font-size: 22px;
+        padding: 50px;
+        margin: 0;
+        padding: 0;
+      }
+    
+  }
+
+  @media screen and (max-width:400px){
+    .BannerHeading{
+        font-size: 20px;
+    }
+    .BannerHeading2{
+        font-size: 20px;
+    }
+    .BannerText{
+        font-size: 12px;
+        margin-top: 0px;
+        /* line-height: 0px; */
+
+    }
+    .colText span{
+        font-size: 14px;
+        padding: 50px;
+      }
+      .colText span span{
+        font-size: 14px;
+        padding: 50px;
+        margin: 0;
+        padding: 0;
+      }
+    
+    
+  }

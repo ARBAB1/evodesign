@@ -13,7 +13,7 @@ const data = [
     box3:"usability texting",
     box4:"user interface design",
     box5:"interactive prototypes",
-    box6:'user flows'
+    box6:'',
 
   },
   {
@@ -21,11 +21,11 @@ const data = [
     para: 'WHAT WE DO',
     ButtonText : "GET A QUOTE",
     Video : "https://evo-design.demo.logomish.com/videos/1(2).mp4",
-    box1:"UX research",
-    box2:"MVP for startups",
-    box3:"usability texting",
-    box4:"user interface design",
-    box5:"interactive prototypes",
+    box1:"SaaS applications",
+    box2:"UX audit",
+    box3:"Design systems",
+    box4:"UX strategy",
+    box5:"Web3",
     box6:'user flows'
 
   },
@@ -33,13 +33,13 @@ const data = [
     title : "WEBFLOW & WORDPRESS",
     para: 'WHAT WE DO',
     ButtonText : "GET A QUOTE",
-    Video : "https://evo-design.demo.logomish.com/videos/1(3).mp4",
-    box1:"UX research",
-    box2:"MVP for startups",
-    box3:"usability texting",
-    box4:"user interface design",
-    box5:"interactive prototypes",
-    box6:'user flows'
+    Video : "https://evo-design.demo.logomish.com/videos/1(1).mp4",
+    box1:"CMS",
+    box2:"Development",
+    box3:"Saas Development",
+    box4:"eCommerce Development",
+    box5:"Analytics and CRO",
+    box6:'',
 
   },
   {
@@ -47,12 +47,12 @@ const data = [
     para: 'WHAT WE DO',
     ButtonText : "GET A QUOTE",
     Video : "https://evo-design.demo.logomish.com/videos/1(4).mp4",
-    box1:"UX research",
-    box2:"MVP for startups",
-    box3:"usability texting",
-    box4:"user interface design",
-    box5:"interactive prototypes",
-    box6:'user flows'
+    box1:"Brand Strategy",
+    box2:"Visual Identity",
+    box3:"Rebranding",
+    box4:"Brand guidelines",
+    box5:'',
+    box6:'',
 
   }
 
@@ -60,9 +60,9 @@ const data = [
 
 const Cards = (item) => {
   return(
-    <div className={`${style.cardContainer}`}>
-      <div  style={{backgroundColor:item.color}} className={`${style.card}`}>
-        <div className={`${style.TextContainer}`}>
+    <div className={` ${style.cardContainer}`}>
+      <div  style={{backgroundColor:item.color}} className={` ${style.card}`}>
+        <div className={` ${style.TextContainer}`}>
             <div className={`${style.paraText}`}>{item.para}</div>
             <div className={`${style.heading}`}>{item.title}</div>
              <div className={` ${style.boxes}`}>
@@ -71,7 +71,7 @@ const Cards = (item) => {
                 <div className={` ${style.box}`}>{item.box3}</div> 
                 <div className={`${style.box}`}>{item.box4}</div>
                 <div className={` ${style.box}`}>{item.box5}</div>
-                <div className={` ${style.box}`}>{item.box6}</div>
+                {/* <div className={` ${style.box}`}>{item.box6}</div> */}
              </div>
             <div className={`${style.button}`}>{item.ButtonText}</div>
         </div>

@@ -1,0 +1,146 @@
+.container {
+  overflow: hidden;
+  background-color: white;
+  margin-top: 200px;
+}
+
+/* Title animation */
+.title {
+  position: fixed;
+  animation: slide-bottom 1s linear 0s 1 normal both;
+}
+
+@keyframes slide-bottom {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(50px);
+  }
+}
+
+/* Header margin adjustment */
+.Head {
+  margin-top: 130px;
+}
+
+/* Price box styles */
+.PriceBx {
+  border: 1px solid #444444;
+  padding: 8px 25px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 20px;
+  color: #444444;
+  background-color: #ffff;
+}
+
+/* Hover effect for price box */
+.PriceBx:hover {
+  background-color: #ce5137;
+  color: #ffff;
+}
+
+/* Checkbox margin */
+.CheckBox {
+  margin: 10px;
+}
+
+/* Form button styles */
+.FormButton {
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: #ffff;
+  background-color: #ce5137;
+  border: none;
+}
+
+/* Media Queries for responsiveness */
+
+/* Styles for tablets and small desktops */
+@media (max-width: 1024px) {
+  .container {
+      margin-top: 150px;
+  }
+  .title {
+      font-size: 1.5rem;
+  }
+  .Head {
+      margin-top: 100px;
+  }
+  .PriceBx {
+      width: 130px;
+      padding: 8px 20px;
+  }
+  .FormButton {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 768px) {
+  .container {
+      margin-top: 100px;
+  }
+  .title {
+      font-size: 1.2rem;
+  }
+  .Head {
+      margin-top: 70px;
+  }
+  .PriceBx {
+      width: 120px;
+      padding: 6px 15px;
+  }
+  .FormButton {
+      padding: 10px 18px;
+      font-size: 0.8rem;
+  }
+}
+
+/* Styles for very small mobile devices */
+@media (max-width: 480px) {
+  .container {
+      margin-top: 80px;
+  }
+  .title {
+      font-size: 1rem;
+  }
+  .Head {
+      margin-top: 50px;
+  }
+  .PriceBx {
+      width: 100px;
+      padding: 5px 10px;
+      font-size: 12px;
+  }
+  .FormButton {
+      padding: 8px 15px;
+      font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .container {
+      margin-top: 80px;
+  }
+  .title {
+      font-size: 1rem;
+  }
+  .Head {
+      margin-top: 50px;
+  }
+  .PriceBx {
+      width: 80px;
+      padding: 5px 10px;
+      font-size: 8px;
+  }
+  .FormButton {
+      padding: 8px 15px;
+      font-size: 0.7rem;
+  }
+}
