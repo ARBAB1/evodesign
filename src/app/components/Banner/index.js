@@ -13,13 +13,13 @@ function index() {
       {/* <Header /> */}
       <div className={`container-fluid  ${styles.container}`}>
         <div className={`row ${styles.row}`}>
-          <div className={`col-lg-12   ${styles.Col}`}>
+          <div className={`col-lg-12  ${styles.Col}`}>
             <div className={styles.Heading}>
               <h1 className={styles.BannerHeading}> Crafting Digital </h1>
               <h1 className={styles.BannerHeading2}>Expriences</h1>{" "}
-              <p className={styles.BannerText}>
-                From MVP to scale. <br /> elevate your business with expert
-                UX/UI Design for <br /> startups and enterprises.{" "}
+              <p className={`col-lg-6 ${styles.BannerText}`}>
+                From MVP to scale.  elevate your business with expert
+                 UX/UI Design for  startups and enterprises.{" "}
               </p>
             </div>
             <div className={styles.icons} data-aos="fade-up">

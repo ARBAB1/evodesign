@@ -39,11 +39,11 @@
     flex-direction: column;
     justify-content: center;
     z-index: 98;
-    margin-top: 100px !important;
+    margin-top: 180px !important;
 }
 
 .BannerHeading{
-   font-weight: 400;
+   font-weight: 900;
    font-size:72px ;
    display: flex;
    flex-direction: column;
@@ -58,7 +58,7 @@
 }
 .BannerHeading2{
     color: #ce5137;
-    font-weight: 400;
+    font-weight: 900;
    /* font-family: "Playfair Display", serif; */
    animation: slide-top 1.2s linear 0.3s 1 normal both;
    font-size:72px ;
@@ -66,7 +66,7 @@
 
 .BannerText{
     margin-top:35px;
-    font-size: 36px;
+    font-size: 28px;
     color: #838383;
     font-weight: "100";
     /* font-family: "Playfair Display", serif; */
@@ -119,8 +119,9 @@
 
 .icons{
     margin-top: 20px;
+    padding-left: 20px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .icons span{

@@ -8,21 +8,21 @@ const index = () => {
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleDragStart = (e) => {
-    const img = new Image();
-    img.src = 'data:image/svg+xml;base64,'; // Add a transparent image as drag image to avoid ghost image
-    e.dataTransfer.setDragImage(img, 0, 0);
-    e.dataTransfer.setData('text/plain', ''); // Required for Firefox
+  const handleMouseMove = (event) => {
+    const { clientX, clientY } = event;
+    setPosition({
+      x: clientX,
+      y: clientY,
+    });
   };
 
-  const handleDrag = (e) => {
-    if (e.clientX === 0 && e.clientY === 0) return; // Avoid setting the position on drag end
-    setPosition({ x: e.clientX, y: e.clientY });
-  };
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
 
-  const handleDragOver = (e) => {
-    e.preventDefault(); // Necessary to allow a drop
-  };
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   const [isMinum, setMinum] = useState(false);
   const [isPodium, setPodium] = useState(false);

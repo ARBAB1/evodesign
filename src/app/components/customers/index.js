@@ -6,7 +6,7 @@ import Image2 from '../../assets/Images/member2.png'
 
 const index = () => {
   return (
-    <div className={style.Container}>
+    <div className={`container ${style.Container}`}>
         
         <div className={`row ${style.row}`}>
             <div className={`col-lg-12 p-5 ${style.title}`}>
