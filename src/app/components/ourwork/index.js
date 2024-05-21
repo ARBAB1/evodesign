@@ -8,9 +8,25 @@ import WorkImage3 from "../../assets/Images/work3jpg.jpg";
 import WorkImage4 from "../../assets/Images/work4.jpg";
 
 
+function createMousePosition(x, y) {
+  return { x, y };
+}
+
+
 const index = () => {
 
+  const [mousePosition, setMousePosition] = React.useState(createMousePosition(0, 0));
 
+  React.useEffect(() => {
+    function saveMousePosition(event) {
+      setMousePosition(createMousePosition(event.clientX, event.clientY));
+    }
+
+    document.addEventListener('mousemove', saveMousePosition);
+    return () => {
+      document.removeEventListener('mousemove', saveMousePosition);
+    };
+  }, [setMousePosition]);
 
 
 
@@ -71,8 +87,19 @@ const index = () => {
               src={WorkImage}
               alt="Movable"
               width={300}
-              height={200}
-             
+              height={300}
+              
+              style={{
+                position: 'relative',
+                // top: `${mousePosition.y}px`,
+                left: `${mousePosition.x}px`,
+                right: `${mousePosition.y}px`,
+                // bottom: `${mousePosition.x}px`,
+                transform: 'translate(+50%, - 50%)',
+                // transform: 'translate(-10%, -10%)',
+                margin: 0,
+                zIndex:99
+              }}
               className={isMinum ? style.Image : style.NonMinum}
              
             />
@@ -123,7 +150,19 @@ const index = () => {
               src={WorkImage3}
               alt="Description of the image"
               width={300}
-              height={200}
+              height={300}
+              style={{
+                position: 'relative',
+                // top: `${mousePosition.y}px`,
+                left: `${mousePosition.x}px`,
+                right: `${mousePosition.y}px`,
+                // bottom: `${mousePosition.x}px`,
+                transform: 'translate(+50%, - 50%)',
+                zIndex:99,
+
+                // transform: 'translate(-10%, -10%)',
+                margin: 0
+              }}
               className={isPodium ? style.Image : style.NonMinum}
             />
           ) : (
@@ -175,7 +214,19 @@ const index = () => {
               src={WorkImage2}
               alt="Description of the image"
               width={300}
-              height={200}
+              height={300}
+              style={{
+                position: 'relative',
+                // top: `${mousePosition.y}px`,
+                left: `${mousePosition.x}px`,
+                right: `${mousePosition.y}px`,
+                // bottom: `${mousePosition.x}px`,
+                transform: 'translate(+50%, - 50%)',
+                zIndex:99,
+
+                // transform: 'translate(-10%, -10%)',
+                margin: 0
+              }}
               className={isGrackle ? style.Image : style.NonMinum}
             />
           ) : (
@@ -231,7 +282,19 @@ const index = () => {
               src={WorkImage4}
               alt="Description of the image"
               width={300}
-              height={200}
+              height={300}
+              style={{
+                position: 'relative',
+                // top: `${mousePosition.y}px`,
+                left: `${mousePosition.x}px`,
+                right: `${mousePosition.y}px`,
+                // bottom: `${mousePosition.x}px`,
+                transform: 'translate(+50%, - 50%)',
+                zIndex:99,
+
+                // transform: 'translate(-10%, -10%)',
+                margin: 0
+              }}
               className={isPlankk ? style.Image : style.NonMinum}
             />
           ) : (
@@ -324,7 +387,7 @@ const index = () => {
         </div>
         <div className={`col-lg-12 col-md-12 col-sm-12  mt-3`}>
           <Image
-            src={WorkImage}
+            src={WorkImage2}
             alt="Description of the image"
             className={style.Image2}
           />
@@ -352,7 +415,7 @@ const index = () => {
         </div>
         <div className={`col-lg-12 col-md-12 col-sm-12  mt-3`}>
           <Image
-            src={WorkImage}
+            src={WorkImage3}
             alt="Description of the image"
             className={style.Image2}
           />
@@ -380,7 +443,7 @@ const index = () => {
         </div>
         <div className={`col-lg-12 col-md-12 col-sm-12  mt-3`}>
           <Image
-            src={WorkImage}
+            src={WorkImage4}
             alt="Description of the image"
             className={style.Image2}
           />
