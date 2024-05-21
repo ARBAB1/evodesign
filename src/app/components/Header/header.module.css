@@ -95,6 +95,15 @@
 }
 
 @media screen and (max-width: 786px) {
+  .container {
+    position: fixed;
+    background-color: transparent;
+    z-index: 99;
+    top: 0;
+    left: 5%;
+    right: 5%;
+  }
+  
   .logo {
     align-items: flex-start;
     height: auto;

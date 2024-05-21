@@ -65,7 +65,7 @@ const index = () => {
               captivating reality.
             </p>
           </div>
-          <div className={`row ${style.ProgressRow}`}>
+             <div className={`row ${style.ProgressRow}`}>
             <div className={`col-5`}>
               <div className={style.timeline}>
                 <div className={`${style.timelineItem} `} onMouseEnter={handleMinium}>
@@ -125,7 +125,72 @@ const index = () => {
             </div>
 
            
-          </div>
+            </div>
+
+
+            {/* responsive section */}
+            <div className={`row ${style.ProgressRowResponsive}`}>
+            <div className={`col-2 ${style.Bar}`}>
+              <ProgressBar />
+            </div>
+            <div className={`col-4`}>
+              <div className={style.timeline}>
+                <div className={`${style.timelineItem} `} onMouseEnter={handleMinium}>
+                  <h2 style={{fontSize:38}} className={isMinium ? style.color : ""}>Immerse</h2>
+                </div>
+                <div className={style.timelineItem} onMouseEnter={HandlePodium}>
+                  <h2 style={{fontSize:38}} className={isPodium ? style.color :""}>Plan</h2>
+                </div>
+                <div className={style.timelineItem} onMouseEnter={HandleGrackle}>
+                  <h2 style={{fontSize:38}} className={isGrackle ? style.color :""}>Create</h2>
+                </div>
+                <div className={style.timelineItem} onMouseEnter={HandlePlankk}>
+                  <h2 style={{fontSize:38}} className={isPlankk ? style.color :""}>Launch</h2>
+                 
+                </div>
+                <div className={style.timelineItem} onMouseEnter={HandleItrate}>
+                  <h2 style={{fontSize:38}} className={isPlankk ? style.color :""}>Iterate</h2>
+                </div>
+              </div>
+            </div>
+
+            <div className={`col-6`}>
+              <div className={style.timeline2}>
+                <div className={style.timelineItem2}>
+                  <p>
+                    Understand your needs, users’ pain points, and business
+                    industry.
+                  </p>
+                </div>
+                <div className={style.timelineItem2}>
+                  <p>
+                    Scope breakdown activities, project brief, team allocation,
+                    and project kickoff.
+                  </p>
+                </div>
+                <div className={style.timelineItem2}>
+                  <p>
+                    This is where the magic happens and our team will gather
+                    inspiration to create an incredible product for you!
+                  </p>
+                </div>
+                <div className={style.timelineItem2}>
+                  <p>
+                    Final deliverable with documentation and project closure
+                    activities.
+                  </p>
+                </div>
+                <div className={style.timelineItem2}>
+                  <p>
+                    Envision the next phase of the project, tracking analytics,
+                    user feedback, and iterative improvements.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+           
+            </div>
         </div>
       </div>
     </>
