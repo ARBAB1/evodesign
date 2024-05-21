@@ -10,6 +10,7 @@ h1,h2,h3,h4,h5,h6,p,span,div{
 
 
 body{
+  overflow-x: hidden !important;
   /* width: '100%'; */
   /* overflow-x: scroll !important; */
 }
@@ -110,7 +111,7 @@ html,
 body {
   max-width: 100vw;
   font-family: "sex-sux" !important;
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 

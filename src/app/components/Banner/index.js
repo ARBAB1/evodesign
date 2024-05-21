@@ -34,7 +34,7 @@ function index() {
               </span>
             </div>
           </div>
-          <div className={styles.VideoContainer}>
+          <div className={`col-12 ${styles.VideoContainer}`}>
             <video
               src="https://evo-design.demo.logomish.com/videos/1(6).mp4"
               autoPlay

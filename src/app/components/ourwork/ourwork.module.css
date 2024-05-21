@@ -25,7 +25,10 @@
 
 .h1Work {
     color: gray;
+
 }
+
+
 
 .WorkButton {
     padding: 10px 15px;
@@ -92,6 +95,7 @@
 
 .Image {
     animation: scale-up-ver-center 1s linear 0s 1 normal both;
+    
 }
 
 .Image2 {

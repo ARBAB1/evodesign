@@ -33,7 +33,7 @@
 .Clients{
     display: flex;
     justify-content: space-between;
-    padding: 25px;
+    padding: 60px;
 }
 
 /* Paragraph styles for slide text */

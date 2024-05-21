@@ -1,28 +1,18 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , useRef } from "react";
 import style from "./ourwork.module.css";
 import Image from "next/image";
 import WorkImage from "../../assets/Images/work1.jpg";
+import WorkImage2 from "../../assets/Images/work2.jpg";
+import WorkImage3 from "../../assets/Images/work3jpg.jpg";
+import WorkImage4 from "../../assets/Images/work4.jpg";
+
 
 const index = () => {
 
-  const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (event) => {
-    const { clientX, clientY } = event;
-    setPosition({
-      x: clientX,
-      y: clientY,
-    });
-  };
 
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
 
   const [isMinum, setMinum] = useState(false);
   const [isPodium, setPodium] = useState(false);
@@ -75,15 +65,16 @@ const index = () => {
         <div className={`col-lg-1  ${style.h1Work}`}>
           <h2>01</h2>
         </div>
-        <div className={`col-lg-5 `} draggable
-              >
+        <div className={`col-lg-5`}  >
           {isMinum ? (
             <Image
               src={WorkImage}
-              alt="Draggable"
+              alt="Movable"
               width={300}
               height={200}
+             
               className={isMinum ? style.Image : style.NonMinum}
+             
             />
           ) : (
             ""
@@ -129,7 +120,7 @@ const index = () => {
         <div className={`col-lg-5 `}>
           {isPodium ? (
             <Image
-              src={WorkImage}
+              src={WorkImage3}
               alt="Description of the image"
               width={300}
               height={200}
@@ -181,7 +172,7 @@ const index = () => {
         <div className={`col-lg-5 `}>
           {isGrackle ? (
             <Image
-              src={WorkImage}
+              src={WorkImage2}
               alt="Description of the image"
               width={300}
               height={200}
@@ -237,7 +228,7 @@ const index = () => {
         <div className={`col-lg-5 `}>
           {isPlankk ? (
             <Image
-              src={WorkImage}
+              src={WorkImage4}
               alt="Description of the image"
               width={300}
               height={200}
