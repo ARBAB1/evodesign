@@ -2,6 +2,11 @@
   overflow: hidden;
   background-color: white;
   margin-top: 200px;
+  background-image: url('../src/app/assets/Images/formbg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
 }
 
 /* Title animation */

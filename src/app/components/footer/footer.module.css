@@ -76,7 +76,7 @@
 /* Styles for mobile devices */
 @media (max-width: 768px) {
     .Footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .Footer span {
@@ -95,9 +95,9 @@
 /* Styles for very small mobile devices */
 @media (max-width: 480px) {
     .Footer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }
+    }   
     .Footer span {
         width: 30px;
         height: 30px;

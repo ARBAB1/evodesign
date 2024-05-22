@@ -60,8 +60,21 @@
   }
   
   .text h1 {
-    line-height: 82px;
-    letter-spacing: 1px;
+    line-height: 65px;
+    letter-spacing: 3px;
+    font-size: 35px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: 700;
+    text-align: start !important;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+
+  }
+
+  .profleCustomer{
+    padding-left: 70px;
+    padding-right: 70px;
   }
   
   .text button {
@@ -93,11 +106,19 @@
   /* Responsiveness */
   
   @media screen and (max-width: 992px) {
+    .profleCustomer{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .paraCont{
+      display: flex;
+      justify-content: flex-start;
+    }
     .text h1 {
       text-align: center;
-      font-size: 40px;
-      line-height: normal;
-      letter-spacing: 2px;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1px;
     }
   
     .title {
@@ -108,11 +129,11 @@
     }
   
     .Images {
-      justify-content: center;
+      /* justify-content: center; */
     }
   
     .Image1, .Image2, .Image3, .Image4 {
-      right: 0 !important;
+      right: 20 !important;
     }
   
     .para {
@@ -140,12 +161,12 @@
   
     .Images {
       flex-wrap: wrap;
-      justify-content: center;
+      /* justify-content: center; */
     }
   
     .Image1, .Image2, .Image3, .Image4 {
       margin: 5px;
-      right: 0 !important;
+      right: 20 !important;
     }
   
     .para {
@@ -158,3 +179,39 @@
     }
   }
   
+
+
+@media screen and (max-width: 768px) {
+  .Image1, .Image2, .Image3, .Image4 {
+    height: 70px;
+    width: 70px;
+  }
+  .text h1 {
+    line-height: 45px;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: 600;
+
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .Image1, .Image2, .Image3, .Image4 {
+    height: 50px;
+    width: 50px;
+  }
+  .text h1 {
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+}

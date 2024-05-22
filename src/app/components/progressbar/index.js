@@ -41,8 +41,15 @@ const ProgressBarComponent = () => {
                     aria-label={`Scroll progress: ${progress}%`}
                 ></div>
             </div>
-            {/* The content of your component goes here */}
-            {/* <div style={{ height: '1500px' }}>Content of the component</div> */}
+            {/* <div ref={componentRef} style={{ position: 'relative', height: '10vh', width:'10vw', borderRadius:50, left:'50%' }}>
+            <div className={style.progressContainer2}>
+                <div
+                    className={style.progressBar2}
+                    style={{ height: `${progress}%` }}
+                    aria-label={`Scroll progress: ${progress}%`}
+                ></div>
+            </div>
+        </div> */}
         </div>
     );
 }

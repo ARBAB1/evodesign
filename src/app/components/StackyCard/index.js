@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './stacky.module.css'
+import Link from 'next/link'
 
 
 const data = [
@@ -73,7 +74,9 @@ const Cards = (item) => {
                 <div className={` ${style.box}`}>{item.box5}</div>
                 {/* <div className={` ${style.box}`}>{item.box6}</div> */}
              </div>
-            <div className={`${style.button}`}>{item.ButtonText}</div>
+             <Link href="/Form" style={{textDecoration:'none'}}>
+                 <div className={`${style.button}`}>{item.ButtonText}</div>
+             </Link>
         </div>
         <video
         src={item.Video}
