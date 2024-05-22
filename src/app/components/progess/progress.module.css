@@ -112,6 +112,13 @@
 }
 
 @media (max-width: 767px) {
+
+  .timeline2 {
+    position: relative;
+    margin: 0 auto;
+    /* padding: 20px; */
+    max-width: 600px;
+  }
   .ProgressRow {
       display: none !important;
   }
@@ -133,20 +140,24 @@
       position: static;
       transform: none;
   }
-  .timeline{
-    padding: 10px;
+  .timelineItem {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
   }
   .timelineItem h2{
-    font-size: 1rem !important;
+    font-size: 2rem !important;
+    font-weight: 900;  
   }
   .timelineItem2{
-    padding: 10px;
+    /* padding: 10px; */
   }
-  .timelineItem2 p{
+  .timelineItem p{
+    margin-top: 5px;
     font-weight: 600 !important;
-    margin: 0;
-    color: #777;
-    font-size: 12px !important;
+    color: #9d9c9c;
+    font-size: 14px !important;
   }
 }
 
@@ -157,4 +168,8 @@
 
 .color{
   color: #ce5137 !important;
+}
+
+@media screen and (max-width:400px) {
+  
 }

@@ -16,23 +16,8 @@
 }
 
 
-.progressContainer2 {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    background-color: #f0f0f0;
-    border-radius:50%;
-    z-index: 10;
-}
-  
-.progressBar2 {
-    width: 100%;
-    background-color: #ce5137;
-    transition: height 0.1s ease-out;
-    position: absolute;
-    border-radius:50%;
-    width: 25px;
-    height: 25px;
-    top: 50%;
-    left: 0;
+@media screen and (min-width: 768px) {
+    .barContainer{
+        height: 150vh;
+    }
 }

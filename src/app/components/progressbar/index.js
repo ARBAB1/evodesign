@@ -33,7 +33,7 @@ const ProgressBarComponent = () => {
     }, []);
 
     return (
-        <div ref={componentRef} style={{ position: 'relative', height: '100vh' , left:'50%' }}>
+        <div ref={componentRef} className={style.barContainer} style={{ position: 'relative', height: '100vh' , left:'50%' }}>
             <div className={style.progressContainer}>
                 <div
                     className={style.progressBar}
