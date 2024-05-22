@@ -1,8 +1,10 @@
 .container{
+   
+}
+
+.section{
     background-color: #f5fafe;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+
 }
 
 /* .bannerText{
@@ -26,7 +28,7 @@
     padding: 0;
     top: 0;
     left: -7%;
-    right: 50%;
+    /* right: 50%; */
 
 }
 .Video{
@@ -35,7 +37,7 @@
 }
 
 .Col{
-    padding: 0px 100px !important;
+    padding: 0px 1px !important;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -80,6 +82,7 @@
     justify-content: center;
     margin: 0 !important;
     padding: 0 !important;
+    background-color: #FFFFFF;
 }
 
 .colText{

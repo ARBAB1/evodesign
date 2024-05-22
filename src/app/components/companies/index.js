@@ -97,7 +97,7 @@ const index = () => {
   };
 
   return (
-    <div className={`container-fluid ${style.container}`}>
+    <div className={`container ${style.container}`}>
       <div className={`row`}>
         <div className={`col-lg-12 ${style.heading}`}>
           <h2> +200 hundred companies impacted over 15 industries</h2>
