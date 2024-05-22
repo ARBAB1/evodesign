@@ -5,7 +5,9 @@ import Header from "../Header/index";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiBasketball } from "react-icons/ci";
-import BannerImage from "../../../../public/Videos/banner1.mp4";
+import BannerImage from "../../assets/Images/banner.jpg";
+import Image from "next/image";
+
 
 function index() {
   return (
@@ -44,6 +46,39 @@ function index() {
             />
           </div>
         </div>
+        {/* <div className={`row ${styles.Resrow}`}>
+          <div className={`col-12 ${styles.Col}`}>
+            <div className={styles.Heading}>
+              <h1 className={styles.BannerHeading}> Crafting Digital </h1>
+              <h1 className={styles.BannerHeading2}>Expriences</h1>{" "}
+              <p className={`col-lg-6 ${styles.BannerText}`}>
+                From MVP to scale.  elevate your business with expert
+                 UX/UI Design for  startups and enterprises.{" "}
+              </p>
+            </div>
+            <div className={styles.icons} data-aos="fade-up">
+              <span>
+                <CiBasketball className={styles.Icon1} />
+              </span>
+              <span>
+                <FaInstagram className={styles.Icon1} />
+              </span>
+              <span>
+                <FaLinkedinIn className={styles.Icon1} />
+              </span>
+            </div>
+          </div>
+          <div className={`col-12 ${styles.VideoContainer}`}>
+            
+            <video
+              src="https://evo-design.demo.logomish.com/videos/1(6).mp4"
+              autoPlay
+              muted
+              loop
+              className={styles.Video}
+            />
+          </div>
+        </div> */}
       </div>
       <div className={`row ${styles.Rowtext}`}>
         <div className={`col-12 ${styles.colText}`}>

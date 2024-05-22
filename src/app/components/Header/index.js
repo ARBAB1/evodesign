@@ -23,9 +23,9 @@ const Index = () => {
         </div>
         <div className={`col-md-12 ${style.Responsive}`}>
             <Link href="/Form" className={style.Link}>
-                <button className={style.quotebtn2}>
-                    GET A QUOTE
-                </button>
+          <button className={style.quotebtn2}>
+              GET A QUOTE
+          </button>
             </Link>
         </div>
       </div>

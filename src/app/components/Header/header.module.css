@@ -18,7 +18,7 @@
   line-height: 1;
   padding: 1rem 1.5rem;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #ce5137;
   color: white;
   border: none !important;
@@ -82,7 +82,7 @@
     line-height: 1;
     padding: 1rem 1.5rem;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
     background-color: #ce5137;
     color: white;
     border: none !important;
@@ -110,5 +110,8 @@
   }
   .quotebtn2 {
     display: block;
+    width: 300px;
   }
+  
+  
 }

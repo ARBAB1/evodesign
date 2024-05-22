@@ -46,7 +46,7 @@
 
 .BannerHeading{
    font-weight: 900;
-   font-size:72px ;
+   font-size:5.5rem ;
    display: flex;
    flex-direction: column;
    /* line-height: 5px; */
@@ -63,7 +63,7 @@
     font-weight: 900;
    /* font-family: "Playfair Display", serif; */
    animation: slide-top 1.2s linear 0.3s 1 normal both;
-   font-size:72px ;
+   font-size:5.5rem ;
 }
 
 .BannerText{
@@ -108,6 +108,10 @@
     font-size: 48px;
     letter-spacing: 1px;
     color: #4d4c4c;
+}
+
+.Resrow{
+    display: none;
 }
 @keyframes scale-in-center {
 			
@@ -161,6 +165,7 @@
 
 
 @media screen and (max-width:992px){
+
     .row{
         top: 217px;
         left: 25px;
@@ -191,7 +196,40 @@
 @media screen and (max-width:600px){
   .Video{
     object-fit: contain;
+     width: 100%;
+    height: 50vh; 
   }
+  .Resrow{
+    display: block !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999;
+  }
+  .row{
+    /* display: none !important; */
+  }
+  .VideoContainer{
+    position: relative !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+        /* z-index: 9; */
+    /* object-fit: cover; */
+    /* padding: 0; */
+    top: 0;
+    /* left: -7%; */
+    right: 50%;
+
+}
+.Col{ 
+    padding: 0px 20px !important;
+    height: 30vh !important;
+    margin-top: 300px !important;
+}
   
 }
 
@@ -228,13 +266,14 @@
 
   @media screen and (max-width:400px){
     .BannerHeading{
-        font-size: 20px;
+        font-size: 2.5rem;
     }
     .BannerHeading2{
-        font-size: 20px;
+        font-size: 2.5rem;
+
     }
     .BannerText{
-        font-size: 12px;
+        font-size: 1rem;
         margin-top: 0px;
         /* line-height: 0px; */
 
