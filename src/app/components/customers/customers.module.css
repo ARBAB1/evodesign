@@ -149,6 +149,10 @@
   }
   
   @media screen and (max-width: 600px) {
+    .profleCustomer{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     .title {
       padding: 20px;
     }
